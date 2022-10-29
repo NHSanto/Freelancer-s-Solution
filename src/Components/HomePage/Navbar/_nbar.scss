@@ -1,0 +1,40 @@
+$blue:#1E5DBC;
+$darker-blue:#0F2F64;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 640px;
+
+.signUpBtn{
+  height: 58px;
+  width: 138px;
+  background: black;
+}
+@media (max-width: $breakpoint-mobile) {
+  .signInBtn{
+    padding-inline-start: 0px!important;
+    display: flex!important;
+    flex-direction: row!important;
+    text-align: center!important;
+  }
+  .signUpBtn{
+
+  }
+}
+@media (min-width: $breakpoint-tablet) {
+  .links {
+    margin-left: 30% !important;
+  }
+  .nav-item {
+    margin-left: 43px !important;
+  }
+}
+
+.home{
+  color: $blue!important;
+}
+.others{
+  color: $darker-blue!important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
